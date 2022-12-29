@@ -1,12 +1,68 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+.max-width-wrapper {
+  /* max-width: 800px; */
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 72px;
+  padding-bottom: 66px;
+}
+
+.indented-heading {
+  background-color: #ffbf00;
+  margin: 0px;
+  padding: 24px;
+  text-align: left;
+  width: fit-content;
+  border-bottom: 6px solid#CC9900;
+}
+
+/* Bigger than tablet we mess with margins on header */
+@media (min-width: 768px) {
+  .pop-out-margin {
+    margin-left: -12px;
+  }
+}
+
+@media (min-width: 390px) {
+  .limit-width {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .remove-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.inner-card-text {
+  padding: 24px;
+  padding-top: 0px;
+}
+
+section {
+  background-color: #666666;
+  border-top: 6px solid #999999;
+}
+
+.card {
+  background-color: #ffffff;
+  border-bottom: 6px solid #999999;
+}
+
+strong {
+  color: #009966;
 }
 
 /* Add styles here! */
